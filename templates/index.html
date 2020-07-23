@@ -1,0 +1,29 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <title> Cardekho Price Predictor</title>
+</head>
+<body >
+    <h3>Car Price Prediction</h3>
+<div class="login">
+  <form action="/result" method="POST">
+    <input type="text" name="No. of years " placeholder="How old is it from manufactured year" required="required" />
+        <input type="text" name="Present Price" placeholder="Market price of the car" required="required" />
+		<input type="text" name="Kms Driven" placeholder="no. of Kms driven" required="required" />
+        <input type="text" name="No of owners" placeholder="No of owners " required="required" />
+        <input type="text" name="Fuel_type Petrol" placeholder="Enter 1 if petrol else 0 " required="required" />
+        <input type="text" name="Fuel_type Diesel" placeholder="Enter 1 if diesel else 0 " required="required" />
+        <input type="text" name="Fuel_type CNG" placeholder="Enter 1 if CNG else 0 " required="required" />
+        <input type="text" name="Seller_type Dealer" placeholder="Enter 1 if dealer else 0 " required="required" />
+        <input type="text" name="Seller_type Individual" placeholder="Enter 1 if individual else 0 " required="required" />
+        <input type="text" name="Transmission Manual" placeholder="Enter 1 if Manual else 0 " required="required" />
+        <input type="text" name="Transmission Automatic" placeholder="Enter 1 if Automatic else 0 " required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predicted_Price</button>
+  </form>
+</div>
+</body>
+</html>
